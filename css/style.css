@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+/*font-size: 20px;*/
+}
+
+body{
+    background-color: #ffffff;
+}
+
+.imgIndex{
+   width: 100%;
+}
+
+body.galeria{
+    background-image: url(../imagenes/bk.jpg);
+    background-repeat: repeat;
+}
+
+header{
+    background-color: #202020;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+}
+
+header img{
+    height: 70px;
+    width: auto;
+}
+
+header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+    list-style: none;
+}
+
+.headerMobile{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+h1{
+    text-align: center;
+}
+
+.h1Mobile{
+    display: none;
+}
+
+.h2Mobile{
+    display: none;
+}
+
+.h3Mobile{
+    display: none;
+}
+
+.sobre{
+    margin: 50px;
+    font-size: 30px;
+}
+
+.infoSobre{
+   text-align: center;
+   margin: 20px;
+}
+
+hr{
+    margin: 45px;
+}
+
+.reseñas{
+    text-align: center;
+    font-size: larger;
+    margin: 80px;
+}
+
+div.productos img{
+border: 1px solid black;
+}
+ 
+.productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productos section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vh;
+    margin-bottom: 50px;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 20px;
+}
+
+.gal1 img{
+    height: 1100px;
+}
+
+.imgs{
+    width: 100%;
+}
+
+div .imgs{
+    display: flex;
+    flex-direction: column;
+}
+
+#superman{
+    width: 100%;
+}
+
+.imgsfp img{
+    width: 25%;
+}
+
+.imgsfp{
+    display: flex;
+    gap: 15px;
+}
+
+.galeriaVideo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.tienda{
+    display: flex;
+    flex-direction: row;
+}
+
+.checkBox{
+    height:80vh;
+    width: 25%; 
+    position: sticky;
+    top: 10px;
+}
+
+.tiendaProductos{
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    justify-content: left;
+}
+.tiendaProductos img{
+    margin: 20px;
+    }
+
+.tiendaProductos p{
+text-align: left;
+margin: 10px;
+}
+
+.checkBox p{
+    text-align: center;
+    margin: 60px;
+}
+
+.buscador{
+    color: #ffffff;
+}
+
+footer{
+    background-color: #202020;
+    width:100% ;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+    
+footer img{
+    height: 80px; 
+}
+    
+footer p{
+    color: white;
+    text-align: right;   
+}
+
+.mapaFooter{
+    display: flex;
+    align-items: center;
+}
+
+.logoFooter{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoFooter img{
+    height: 25vh;
+
+}
+
+.contactoFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    padding-right: 20px;
+}
+ 
+/* Lista mobile*/
+@media (max-width:600px) {
+
+    /*Index*/
+
+        .productos{
+            background-color: rgb(224, 52, 52);
+        }
+
+        .header{
+            display: none;
+        }
+
+        .headerMobile{
+            display: block;
+            margin: 45px;
+        }
+
+        .h1Index{
+            display: none;
+        }
+
+        .imgIndex{
+            display: none;
+        }
+
+        .mapaFooter{
+            display: none;
+        }
+
+        .Footer{
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .contactoFooter{
+            align-items: center;
+        }
+
+        .h1Mobile{
+            display: block;
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .h2Mobile{
+            display: block;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .h3Mobile{
+            display: block;
+            border: 1px solid rgb(61, 60, 60);
+            border-radius: 13px;
+            
+        }
+
+
+
+}
