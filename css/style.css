@@ -21,12 +21,13 @@ body.galeria{
     background-repeat: repeat;
 }
 
-header{
+.header{
     background-color: #202020;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px 10%;
+    width: 100%;
 }
 
 header img{
@@ -112,12 +113,13 @@ section{
     margin: 20px;
 }
 
-.gal1 img{
+.gal img{
     height: 1100px;
+    width: 50vh;
 }
 
 .imgs{
-    width: 100%;
+    width: 50%;
 }
 
 div .imgs{
@@ -224,14 +226,25 @@ footer p{
     padding-right: 20px;
 }
  
+
+
+
+
+.gapContainer{
+    display: none;
+}
+
+
+
+
+
+
 /* Lista mobile*/
 @media (max-width:600px) {
 
     /*Index*/
 
-        .productos{
-            background-color: rgb(224, 52, 52);
-        }
+
 
         .header{
             display: none;
@@ -240,8 +253,26 @@ footer p{
         .headerMobile{
             display: block;
             margin: 45px;
+            background-color:#202020
         }
-
+        .headerMobile nav div{
+            background-color:#202020;
+            color: white;
+        }
+        .headerMobile nav div ul li a{
+            background-color:#202020;
+            color: white;
+        }
+        nav.bg-body-tertiary{
+            background-color:#252525!important
+        }
+        button.navbar-toggler{
+            background-color:rgba(255, 255, 255, 0.283);
+        }
+        button.btn-outline-success{
+            color: gray;
+            border:1px solid gray;
+        }
         .h1Index{
             display: none;
         }
@@ -254,19 +285,23 @@ footer p{
             display: none;
         }
 
-        .Footer{
+        Footer{
             flex-direction: column;
             justify-content: center;
+            align-items: center;
         }
 
         .contactoFooter{
             align-items: center;
+            border-top: 1px solid gray;
+            padding-top: 24px;
         }
 
         .h1Mobile{
             display: block;
             text-align: center;
             font-size: 35px;
+            padding-top: 60px;
         }
 
         .h2Mobile{
@@ -278,10 +313,38 @@ footer p{
         .h3Mobile{
             display: block;
             border: 1px solid rgb(61, 60, 60);
-            border-radius: 13px;
+            border-radius: 8px;
+            width: max-content;
             
         }
 
+        
+        .gal1{
+            height: 38vh;
+            align-self: center;
+            width: 20vh;
+        }
+        .gal2{
+            height:19vh;
+            width: 19vh;
+        }
+        .gal3{
+            width: 40vh;
+            height: auto;
+            margin: 10px 0 10px 0;
+        }
+        .gal4{
+            width:19vh ;
+        }
+        .galeriaDesktop{
+            display: none;
+        }
+        .gapContainer{
+            display: block;
+            padding-top: 80px;
+            padding-bottom: 40px;
+
+        }
 
 
 }
