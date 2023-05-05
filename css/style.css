@@ -167,7 +167,7 @@ div .imgs{
 }
 .tiendaProductos img{
     margin: 20px;
-    }
+}
 
 .tiendaProductos p{
 text-align: left;
@@ -191,7 +191,12 @@ footer{
     flex-direction: row;
     justify-content: space-between;
 }
+
+.gapContainer{
+    display: none;
+}
     
+/*Footer*/
 footer img{
     height: 80px; 
 }
@@ -230,121 +235,100 @@ footer p{
 
 
 
-.gapContainer{
-    display: none;
-}
-
-
-
-
-
-
 /* Lista mobile*/
 @media (max-width:600px) {
 
-    /*Index*/
-
-
-
-        .header{
-            display: none;
-        }
-
-        .headerMobile{
-            display: block;
-            margin: 45px;
-            background-color:#202020
-        }
-        .headerMobile nav div{
-            background-color:#202020;
-            color: white;
-        }
-        .headerMobile nav div ul li a{
-            background-color:#202020;
-            color: white;
-        }
-        nav.bg-body-tertiary{
-            background-color:#252525!important
-        }
-        button.navbar-toggler{
-            background-color:rgba(255, 255, 255, 0.283);
-        }
-        button.btn-outline-success{
-            color: gray;
-            border:1px solid gray;
-        }
-        .h1Index{
-            display: none;
-        }
-
-        .imgIndex{
-            display: none;
-        }
-
-        .mapaFooter{
-            display: none;
-        }
-
-        Footer{
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .contactoFooter{
-            align-items: center;
-            border-top: 1px solid gray;
-            padding-top: 24px;
-        }
-
-        .h1Mobile{
-            display: block;
-            text-align: center;
-            font-size: 35px;
-            padding-top: 60px;
-        }
-
-        .h2Mobile{
-            display: block;
-            font-size: 20px;
-            text-align: center;
-        }
-
-        .h3Mobile{
-            display: block;
-            border: 1px solid rgb(61, 60, 60);
-            border-radius: 8px;
-            width: max-content;
+/*Index*/
+    .header{
+        display: none;
+    }
+    .headerMobile{
+        display: block;
+        margin: 45px;
+        background-color:#202020
+    }
+    .headerMobile nav div{
+        background-color:#202020;
+        color: white;
+    }
+    .headerMobile nav div ul li a{
+        background-color:#202020;
+        color: white;
+    }
+    nav.bg-body-tertiary{
+        background-color:#252525!important
+    }
+    button.navbar-toggler{
+        background-color:rgba(255, 255, 255, 0.283);
+    }
+    button.btn-outline-success{
+        color: gray;
+        border:1px solid gray;
+    }
+    .h1Index{
+        display: none;
+    }
+    .imgIndex{
+        display: none;
+    }
+    .h1Mobile{
+        display: block;
+        text-align: center;
+        font-size: 35px;
+        padding-top: 60px;
+    }
+    .h2Mobile{
+        display: block;
+        font-size: 20px;
+        text-align: center;
+    }
+    .h3Mobile{
+        display: block;
+        border: 1px solid rgb(61, 60, 60);
+        border-radius: 8px;
+        width: max-content;
             
-        }
+    }
 
-        
-        .gal1{
-            height: 38vh;
-            align-self: center;
-            width: 20vh;
-        }
-        .gal2{
-            height:19vh;
-            width: 19vh;
-        }
-        .gal3{
-            width: 40vh;
-            height: auto;
-            margin: 10px 0 10px 0;
-        }
-        .gal4{
-            width:19vh ;
-        }
-        .galeriaDesktop{
-            display: none;
-        }
-        .gapContainer{
-            display: block;
-            padding-top: 80px;
-            padding-bottom: 40px;
+/* Galeria*/
+    .gal1{
+        height: 38vh;
+        align-self: center;
+        width: 20vh;
+    }
+    .gal2{
+        height:19vh;
+        width: 19vh;
+    }
+    .gal3{
+        width: 40vh;
+        height: auto;
+        margin: 10px 0 10px 0;
+    }
+    .gal4{
+        width:19vh ;
+    }
+    .galeriaDesktop{
+        display: none;
+    }
+    .gapContainer{
+        display: block;
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
 
-        }
-
-
+/* Footer*/
+    .mapaFooter{
+        display: none;
+    }
+    Footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactoFooter{
+        align-items: center;
+        border-top: 1px solid gray;
+        padding-top: 24px;
+    }
 }
