@@ -180,7 +180,7 @@ div .imgs{
     justify-content: left;
 }
 .tiendaProductos img{
-    margin: 20px;
+    margin: 25px;
 }
 
 .tiendaProductos p{
@@ -257,7 +257,7 @@ footer p{
    
     .headerMobile{
         display: block;
-        margin: 45px;
+        margin: 65px;
         background-color:#202020
     }
     .headerMobile nav div{
