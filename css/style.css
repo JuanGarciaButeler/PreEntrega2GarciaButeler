@@ -7,7 +7,19 @@
     font-family: 'Nunito Sans', sans-serif;
 /*font-size: 20px;*/
 }
-
+.div:hover{
+    transform:scale(1.1)
+}
+.div{
+    transition: 0.2s;
+}
+.nav-links li a:hover{
+    border-bottom: 1px solid white;
+}
+.nav-links li a{
+    transition: 0.2s;
+    border-bottom: 1px solid transparent;
+}
 body{
     background-color: #ffffff;
 }
@@ -114,7 +126,7 @@ section{
 }
 
 .gal img{
-    height: 1100px;
+    height: 1200px;
     width: 50vh;
 }
 
@@ -132,12 +144,14 @@ div .imgs{
 }
 
 .imgsfp img{
-    width: 25%;
+    width: 100%;
 }
-
+.imgs{
+    width: 100%;
+}
 .imgsfp{
     display: flex;
-    gap: 15px;
+    gap: 10px;
 }
 
 .galeriaVideo{
@@ -240,6 +254,7 @@ footer p{
     .header{
         display: none;
     }
+   
     .headerMobile{
         display: block;
         margin: 45px;
